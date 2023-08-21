@@ -11,10 +11,14 @@ $newString = str_replace($smallText, '***', $longText);
     <title>PHP Badwords</title>
 </head>
 <body>
-    <form method="get" action="my_file.php">
-        <textarea name="words" id="" cols="20" rows="8"></textarea>
-        <input type="text" name="badword" id="">
-        <button type="submit">Invia</button>
-    </form>
+<h1>
+    <?php 
+    echo $longText;
+    echo strlen(trim($longText));
+    echo '<br>';
+    echo $newString;
+    echo strlen(trim($newString));
+    ?>
+</h1>
 </body>
 </html>
