@@ -13,9 +13,13 @@ $newString = str_replace($smallText, '***', $longText);
 <body>
 <h1>
     <?php 
+    echo 'Testo originale:';
+     echo '<br>';
     echo $longText;
     echo strlen(trim($longText));
     echo '<br>';
+    echo 'Testo censurato:';
+     echo '<br>';
     echo $newString;
     echo strlen(trim($newString));
     ?>

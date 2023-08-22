@@ -12,8 +12,18 @@ $newString = str_replace($smallText, '***', $longText);
 </head>
 <body>
     <form method="get" action="my_file.php">
-        <textarea name="words" id="" cols="20" rows="8"></textarea>
-        <input type="text" name="badword" id="">
+        <label for="paragraph">
+            Inserisci un paragrafo
+        </label> 
+        <div>
+        <textarea name="words" id="paragraph" cols="30" rows="10" placeholder="Inserisci un paragrafo"></textarea>
+        </div>
+        <label for="badword">
+            Inserisci la parola da censurare
+        </label>
+        <div>
+        <input type="text" name="badword" id="badword" placeholder="Inserisci le parole da censurare">
+        </div>
         <button type="submit">Invia</button>
     </form>
 </body>
